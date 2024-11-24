@@ -1,0 +1,19 @@
+{
+  "name": "be-sabiri-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "PGDATABASE=premier_league jest",
+    "test-seed": "PGDATABASE=premier_league jest seed.test.js",
+    "setup-db": "psql -f ./db/premier-league.sql",
+    "seed": "PGDATABASE=premier_league node db/run-seed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.13.1"
+  }
+}
