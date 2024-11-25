@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "devDependencies": {},
   "scripts": {
     "test": "PGDATABASE=premier_league jest",
     "test-seed": "PGDATABASE=premier_league jest seed.test.js",
@@ -14,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "pg": "^8.13.1"
   }
 }
